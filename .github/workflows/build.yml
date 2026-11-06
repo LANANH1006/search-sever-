@@ -13,7 +13,8 @@ jobs:
         with:
           gradle-version: 8.12
       - run: gradle build
+        working-directory: lananh-quickjoin
       - uses: actions/upload-artifact@v4
         with:
           name: lananh-quickjoin
-          path: build/libs/*.jar
+          path: lananh-quickjoin/build/libs/*.jar
